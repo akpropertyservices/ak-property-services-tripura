@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="AK Property Services helps you buy and sell properties with confidence. Contact us for property enquiries.">
+<title>AK Property Services | Buy & Sell Property</title>
+<style>
+:root{--navy:#10243a;--blue:#173f67;--gold:#e9b44c;--cream:#f7f5ef;--ink:#172435;--muted:#667487;--white:#fff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);line-height:1.6}a{text-decoration:none;color:inherit}.container{width:min(1120px,92%);margin:auto}
+header{position:sticky;top:0;z-index:20;background:rgba(16,36,58,.97);color:#fff;box-shadow:0 4px 18px #0b1c2b25}.nav{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{display:flex;align-items:center;gap:12px;font-weight:800;letter-spacing:.3px}.logo{width:46px;height:46px;border-radius:12px;background:var(--gold);color:var(--navy);display:grid;place-items:center;font-size:19px;font-weight:900}.brand small{display:block;color:#d7e0e9;font-size:11px;font-weight:500;letter-spacing:2px}.links{display:flex;gap:25px;align-items:center;font-size:14px}.links a:hover{color:var(--gold)}.nav-cta,.btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 19px;border-radius:7px;background:var(--gold);color:var(--navy);font-weight:800;border:0;cursor:pointer}.menu{display:none;background:transparent;color:#fff;border:1px solid #ffffff55;padding:8px 12px;border-radius:6px;font-size:20px}
+.hero{background:linear-gradient(90deg,rgba(8,23,39,.9),rgba(8,23,39,.48)),url('https://images.unsplash.com/photo-1600593016235-4a4f2c2a9c7a?auto=format&fit=crop&w=2000&q=85') center/cover;min-height:600px;color:#fff;display:flex;align-items:center}.hero-content{max-width:700px;padding:82px 0}.eyebrow{color:var(--gold);font-size:13px;font-weight:800;letter-spacing:3px;text-transform:uppercase}.hero h1{font-size:clamp(40px,6vw,70px);line-height:1.06;margin:18px 0}.hero p{font-size:18px;color:#e1e8ef;max-width:590px}.hero-actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:28px}.btn-outline{display:inline-flex;align-items:center;justify-content:center;padding:11px 18px;border:1px solid #ffffffa8;border-radius:7px;font-weight:700}.btn-outline:hover{background:#ffffff18}.trust-strip{background:var(--gold);padding:17px 0}.trust-inner{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap;font-weight:800;color:var(--navy);font-size:14px}.trust-inner span:before{content:"✓";margin-right:9px}
+section{padding:82px 0}.section-head{text-align:center;max-width:680px;margin:0 auto 42px}.section-head .eyebrow{color:#a97913}.section-head h2{font-size:clamp(30px,4vw,43px);line-height:1.15;margin:10px 0 14px;color:var(--navy)}.section-head p{color:var(--muted);margin:0}.services{background:var(--cream)}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.card{background:#fff;border-radius:14px;overflow:hidden;box-shadow:0 10px 30px #152b4010;border:1px solid #e8eaf0}.card img{width:100%;height:205px;object-fit:cover;display:block}.card-body{padding:24px}.icon{height:45px;width:45px;border-radius:11px;display:grid;place-items:center;background:#fff3d8;color:#9a6a08;font-size:23px;margin-bottom:15px}.card h3{margin:0 0 9px;color:var(--navy);font-size:21px}.card p{margin:0;color:var(--muted);font-size:15px}.about-grid{display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:55px}.about-photo{position:relative}.about-photo img{width:100%;height:440px;object-fit:cover;border-radius:16px}.photo-tag{position:absolute;bottom:22px;left:-15px;background:var(--gold);color:var(--navy);padding:17px 22px;border-radius:10px;font-weight:800;box-shadow:0 10px 24px #0002}.about-copy h2{font-size:clamp(30px,4vw,42px);line-height:1.15;color:var(--navy);margin:12px 0 18px}.about-copy p{color:var(--muted)}.checks{list-style:none;padding:0;margin:24px 0}.checks li{margin:12px 0;font-weight:700}.checks li:before{content:"✓";display:inline-grid;place-items:center;background:#eaf5ee;color:#217345;border-radius:50%;width:24px;height:24px;margin-right:10px}
+.process{background:var(--navy);color:#fff}.process .section-head h2{color:#fff}.process .section-head p{color:#c6d0da}.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.step{padding:24px 20px;border:1px solid #ffffff25;border-radius:12px;background:#ffffff08}.number{font-size:13px;color:var(--gold);font-weight:900;letter-spacing:2px}.step h3{margin:10px 0;font-size:19px}.step p{margin:0;color:#c6d0da;font-size:14px}
+.contact{background:var(--cream)}.contact-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:35px;align-items:start}.contact-panel{background:var(--navy);color:#fff;padding:34px;border-radius:15px}.contact-panel h2{font-size:30px;line-height:1.2;margin:0 0 12px}.contact-panel p{color:#cbd5df}.contact-line{padding:16px 0;border-bottom:1px solid #ffffff25}.contact-line strong{display:block;color:var(--gold);font-size:12px;letter-spacing:1.4px;text-transform:uppercase}.contact-line a{font-size:19px;font-weight:700}.form-panel{background:#fff;padding:32px;border-radius:15px;box-shadow:0 10px 30px #152b4010}.form-panel h3{margin-top:0;color:var(--navy);font-size:24px}.form-row{display:grid;grid-template-columns:1fr 1fr;gap:14px}.field{margin-bottom:15px}.field label{display:block;font-size:13px;font-weight:800;margin-bottom:6px}.field input,.field select,.field textarea{width:100%;padding:13px;border:1px solid #d8dee7;border-radius:7px;font:inherit;background:#fff}.field textarea{min-height:100px;resize:vertical}.form-note{font-size:12px;color:var(--muted);margin:12px 0 0}
+footer{background:#091827;color:#d6dfe8;padding:28px 0}.footer-inner{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap;font-size:13px}.footer-inner strong{color:#fff}.wa-float{position:fixed;right:20px;bottom:20px;background:#20b866;color:#fff;padding:13px 18px;border-radius:50px;font-weight:800;box-shadow:0 8px 25px #0003;z-index:30}
+@media(max-width:800px){.links{display:none;position:absolute;left:0;right:0;top:76px;background:var(--navy);padding:20px 4%;flex-direction:column;align-items:stretch;gap:16px}.links.open{display:flex}.menu{display:block}.nav-cta{display:none}.cards{grid-template-columns:1fr}.about-grid,.contact-grid{grid-template-columns:1fr}.about-photo img{height:330px}.photo-tag{left:10px}.steps{grid-template-columns:1fr 1fr}.hero{min-height:550px}.hero-content{padding:65px 0}.trust-inner{justify-content:center}.form-row{grid-template-columns:1fr}}
+@media(max-width:460px){section{padding:62px 0}.steps{grid-template-columns:1fr}.hero h1{font-size:43px}.hero p{font-size:16px}.contact-panel,.form-panel{padding:24px}.wa-float{right:12px;bottom:12px;padding:11px 15px}}
+</style>
+</head>
+<body>
+<header>
+  <div class="container nav">
+    <a class="brand" href="#home" aria-label="AK Property Services home"><span class="logo">AK</span><span>AK PROPERTY SERVICES<small>BUY • SELL • PROPERTY</small></span></a>
+    <nav class="links" id="navLinks"><a href="#home">Home</a><a href="#services">Our Services</a><a href="#about">About Us</a><a href="#process">How It Works</a><a href="#contact">Contact</a></nav>
+    <a class="nav-cta" href="#contact">Enquire Now ↗</a>
+    <button class="menu" id="menuBtn" aria-label="Open menu">☰</button>
+  </div>
+</header>
+<main>
+<section class="hero" id="home"><div class="container"><div class="hero-content">
+  <div class="eyebrow">Your property. Your future.</div>
+  <h1>Find the right place to call <span style="color:var(--gold)">home.</span></h1>
+  <p>Looking to buy or sell property? AK Property Services helps make your property journey simple, clear and confident.</p>
+  <div class="hero-actions"><a class="btn" href="#contact">Discuss Your Property ↗</a><a class="btn-outline" href="#services">Explore Services</a></div>
+</div></div></section>
+<div class="trust-strip"><div class="container trust-inner"><span>Personalised Support</span><span>Clear Communication</span><span>Buy & Sell Assistance</span><span>Client-First Service</span></div></div>
+<section class="services" id="services"><div class="container">
+  <div class="section-head"><div class="eyebrow">What we do</div><h2>Property services made simple</h2><p>Whether you are taking your first step or planning your next move, we are here to help you explore your options.</p></div>
+  <div class="cards">
+    <article class="card"><img src="https://images.unsplash.com/photo-1600593016235-4a4f2c2a9c7a?auto=format&fit=crop&w=900&q=80" alt="Modern house exterior"><div class="card-body"><div class="icon">⌂</div><h3>Buy a Property</h3><p>Tell us what you are looking for and get support while exploring suitable property options.</p></div></article>
+    <article class="card"><img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=900&q=80" alt="Bright modern home interior"><div class="card-body"><div class="icon">↗</div><h3>Sell a Property</h3><p>Share your property details and connect with people interested in buying.</p></div></article>
+    <article class="card"><img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=900&q=80" alt="House keys and property documents"><div class="card-body"><div class="icon">▤</div><h3>Property Guidance</h3><p>Get help understanding the next steps, arranging viewings and organising your enquiry.</p></div></article>
+  </div>
+</div></section>
+<section id="about"><div class="container about-grid">
+  <div class="about-photo"><img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1100&q=85" alt="Welcoming modern residential property"><div class="photo-tag">Your goals come first.</div></div>
+  <div class="about-copy"><div class="eyebrow">About AK Property Services</div><h2>A more confident way to make your next move.</h2><p>Property decisions are important. Our aim is to make the process easier by listening to your needs, communicating clearly and helping you take the next step.</p><ul class="checks"><li>Support for property buyers and sellers</li><li>Friendly, responsive communication</li><li>Guidance from enquiry to next steps</li><li>A service shaped around your requirements</li></ul><a class="btn" href="#contact">Talk to Our Team ↗</a></div>
+</div></section>
+<section class="process" id="process"><div class="container"><div class="section-head"><div class="eyebrow">Simple steps</div><h2>How it works</h2><p>Start with a conversation. We will help you understand the next steps for your property goal.</p></div>
+  <div class="steps"><div class="step"><div class="number">STEP 01</div><h3>Tell Us Your Plan</h3><p>Buying, selling or just exploring? Let us know what you need.</p></div><div class="step"><div class="number">STEP 02</div><h3>Share the Details</h3><p>Discuss your preferred location, property type and budget or asking price.</p></div><div class="step"><div class="number">STEP 03</div><h3>Explore Options</h3><p>We help you review the available options and arrange the next conversation.</p></div><div class="step"><div class="number">STEP 04</div><h3>Move Forward</h3><p>Take your next steps with clear communication and appropriate checks.</p></div></div>
+</div></section>
+<section class="contact" id="contact"><div class="container"><div class="section-head"><div class="eyebrow">Get in touch</div><h2>Let's talk property.</h2><p>Contact AK Property Services about buying or selling a property.</p></div>
+  <div class="contact-grid"><div class="contact-panel"><h2>We’re ready to hear from you.</h2><p>Send us a message or call directly to discuss your property needs.</p><div class="contact-line"><strong>Call us</strong><a href="tel:+918730048570">+91 87300 48570</a></div><div class="contact-line"><strong>WhatsApp</strong><a href="https://wa.me/918730048570?text=Hello%20AK%20Property%20Services%2C%20I%20want%20to%20enquire%20about%20a%20property." target="_blank" rel="noopener">Message us on WhatsApp ↗</a></div><div class="contact-line"><strong>Services</strong><span>Property buying • Property selling</span></div></div>
+  <div class="form-panel"><h3>Send an enquiry</h3><form id="enquiryForm"><div class="form-row"><div class="field"><label for="name">Your name *</label><input id="name" name="name" required placeholder="Enter your name"></div><div class="field"><label for="phone">Phone number *</label><input id="phone" name="phone" required inputmode="tel" placeholder="Your contact number"></div></div><div class="field"><label for="interest">I want to *</label><select id="interest" name="interest" required><option value="">Choose an option</option><option>Buy a property</option><option>Sell a property</option><option>Property guidance</option></select></div><div class="field"><label for="details">Property details</label><textarea id="details" name="details" placeholder="Location, property type, budget or any questions"></textarea></div><button class="btn" type="submit">Send Enquiry on WhatsApp ↗</button><p class="form-note">Your message will open in WhatsApp for you to review and send. This demo form does not store your information.</p></form></div>
+  </div>
+</div></section>
+</main>
+<footer><div class="container footer-inner"><div><strong>AK PROPERTY SERVICES</strong><br>Helping you take the next step in property.</div><div>© <span id="year"></span> AK Property Services. All rights reserved.</div></div></footer>
+<a class="wa-float" href="https://wa.me/918730048570?text=Hello%20AK%20Property%20Services" target="_blank" rel="noopener">☏ WhatsApp</a>
+<script>
+const menuBtn=document.getElementById('menuBtn'),navLinks=document.getElementById('navLinks');
+menuBtn.addEventListener('click',()=>navLinks.classList.toggle('open'));
+navLinks.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>navLinks.classList.remove('open')));
+document.getElementById('year').textContent=new Date().getFullYear();
+document.getElementById('enquiryForm').addEventListener('submit',function(e){
+ e.preventDefault();
+ const name=document.getElementById('name').value.trim(),phone=document.getElementById('phone').value.trim(),interest=document.getElementById('interest').value,details=document.getElementById('details').value.trim();
+ const msg=`Hello AK Property Services,%0A%0AMy name: ${encodeURIComponent(name)}%0AMy phone: ${encodeURIComponent(phone)}%0AEnquiry: ${encodeURIComponent(interest)}%0AProperty details: ${encodeURIComponent(details||'Not provided')}`;
+ window.open('https://wa.me/918730048570?text='+msg,'_blank','noopener');
+});
+</script>
+</body>
+</html>
